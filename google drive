@@ -1,0 +1,7 @@
+from google.colab import drive 
+drive.mount('/content/drive') #and mount it on google colab
+
+import sys
+sys.path.insert(0, '/content/drive/MyDrive/burgers_shock_mu_01_pi.mats') #upload utilities folder to your google drive before running the lines
+
+data = scipy.io.loadmat('../content/drive/MyDrive/burgers_shock_mu_01_pi.mat')  	# Load data from file
